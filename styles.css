@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#buttons-player-selection {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 13px;
+    width: 90px;
+}
+
+#content {
+    border: 1px solid purple;
+    width: 200px;
+    height: 100px;
+    margin: 20px 0px;
+}
