@@ -78,6 +78,25 @@ function playGame() {
         console.log("human: " + humanScore + "   computer: " + computerScore);
     }
 
+    const rockButton = document.querySelector("#rockSelection");
+    rockButton.addEventListener("click", ()=> {
+        humanChoice = "rock";
+        playRound(humanChoice, getComputerChoice());
+    })
+
+    const paperButton = document.querySelector("#paperSelection");
+    paperButton.addEventListener("click", ()=> {
+        humanChoice = "paper";
+        playRound(humanChoice, getComputerChoice());
+    })
+
+
+    const scissorsButton = document.querySelector("#scissorsSelection");
+    scissorsButton.addEventListener("click", ()=> {
+        humanChoice = "scissors";
+        playRound(humanChoice, getComputerChoice());
+    })
+
     // playRound(getHumanChoice(), getComputerChoice());
     // playRound(getHumanChoice(), getComputerChoice());
     // playRound(getHumanChoice(), getComputerChoice());
@@ -88,22 +107,9 @@ function playGame() {
 
 playGame();
 
-const rockButton = document.querySelector("#rockSelection");
-rockButton.addEventListener("click", ()=> {
-    humanChoice = "rock";
-    console.log(humanChoice);
-})
 
 
-const paperButton = document.querySelector("#paperSelection");
-paperButton.addEventListener("click", ()=> {
-    humanChoice = "paper";
-    console.log(humanChoice);
-})
 
 
-const scissorsButton = document.querySelector("#scissorsSelection");
-scissorsButton.addEventListener("click", ()=> {
-    humanChoice = "scissors";
-    console.log(humanChoice);
-})
+
+
