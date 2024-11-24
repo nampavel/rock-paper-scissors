@@ -5,7 +5,7 @@ body {
     gap: 10px;
 }
 
-#buttons-player-selection {
+#buttons-player-selection-container {
     display: flex;
     gap: 10px;
     margin-top: 20px;
@@ -16,9 +16,20 @@ button {
     width: 90px;
 }
 
-#content {
+#game-results-container{
     border: 1px solid purple;
     width: 200px;
-    height: 100px;
+    height: 250px;
     margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p {
+    text-align: center;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
+
 }
