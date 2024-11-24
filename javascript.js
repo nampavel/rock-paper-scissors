@@ -87,3 +87,23 @@ function playGame() {
 
 
 playGame();
+
+const rockButton = document.querySelector("#rockSelection");
+rockButton.addEventListener("click", ()=> {
+    humanChoice = "rock";
+    console.log(humanChoice);
+})
+
+
+const paperButton = document.querySelector("#paperSelection");
+paperButton.addEventListener("click", ()=> {
+    humanChoice = "paper";
+    console.log(humanChoice);
+})
+
+
+const scissorsButton = document.querySelector("#scissorsSelection");
+scissorsButton.addEventListener("click", ()=> {
+    humanChoice = "scissors";
+    console.log(humanChoice);
+})
